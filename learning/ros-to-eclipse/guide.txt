@@ -1,0 +1,27 @@
+Source: http://u.cs.biu.ac.il/~yehoshr1/89-685/
+
+1. Create ros wordspace
+
+$ mkdir -p ~/catkin_ws/src
+$ cd ~/catkin_ws/src
+$ catkin_init_workspace
+$ cd ~/catkin_ws
+$ catkin_make
+$ catkin_create_pkg first_pkg std_msgs rospy roscpp
+$ cd ~/catkin_ws
+$ catkin_make --force-cmake -G"Eclipse CDT4 - Unix Makefiles"
+
+2. Now start Eclipse
+Choose catkin_ws folder as the workspace folder
+Choose File --> Import --> General --> Existing Projects into Workspace
+
+3. Now import the project from the ~/catkin_ws/build folder
+
+4.By default, the intellisense in Eclipse won’t recognize the system header files (like <string>). To fix that:
+Go to Project Properties --> C/C++ General --> Preprocessor Include Paths, Macros, etc. --> Providers tab
+Check CDT GCC Built-in Compiler Settings [Shared]
+
+5.After that rebuild the C/C++ index by Right click on project -> Index -> Rebuild
+
+
+6. Eclipse provides a link "Source directory" within the project so that you can edit the source codes
