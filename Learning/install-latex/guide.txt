@@ -1,0 +1,13 @@
+1/ install latex for atom
+
+apm install language-latex
+apm install latex
+apm install pdf-view
+sudo apt-get install hunspell-en-gb
+sudo apt-get install myspell-en-gb
+sudo apt install latexmk
+
+2/ tutorial for creating latex file
+https://medium.com/@lucasrebscher/using-atom-as-a-latex-editor-93756de3d726
+
+private
