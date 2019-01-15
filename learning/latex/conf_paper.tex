@@ -38,7 +38,7 @@
 \providecommand{\keywordsh}[1]{\textbf{\textit{Index terms---}} #1}
 
 \title{\LARGE \bf
-Feature Set Refinement for Robotic Tasks by Human Demonstration
+Features Set Refinement in Programming by Demonstration
 }
 
 
@@ -57,7 +57,7 @@ Feature Set Refinement for Robotic Tasks by Human Demonstration
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{abstract}
 
-Feature selection is an essential part of representing the task in robot learning. With a relevant set of features, the robot can not only have a better performance but also decrease the learning cost. In this work, the feature selection method is proposed to help the robot determine which subset of the features is relevent to represent a task. We implement an experiment system for human-robot interaction in simple task as proofing our concept as well as showing the preliminary results
+Feature selection is an essential part of representing the task in robot learning. With a relevant set of features, the robot can not only have a better performance but also decrease the learning cost. In this work, the feature selection method is proposed to help the robot determine which subset of the features is relevent to represent a task in Programming by Demonstration framework. We implement an experiment system for human-robot interaction in simple task as proofing our concept as well as showing the preliminary results
 
 \end{abstract}
 
@@ -71,7 +71,11 @@ Feature selection is an essential part of representing the task in robot learnin
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{INTRODUCTION}
 
-Transferring knowledge is defined as allowing the instructor to share or disseminate the knowledge or experiment to the learner. In robotic field, Human-Robot knowledge transfer which allows non-robotic-experts have opportunities to interact with robots is one of the areas that attracts attention of mamy researchers. There are two parts in Human-Robot knowledge tranfer. The first part is human-to-robot part in which robot learn the knowledge from human through human instruction and the other part is robot-to-human part where robot teach the task to human \cite{c1}. In our work, the task is defined as the sequences of states and the actions that transfer the current state to the next state of the task. Our assumption is that if the states can be well defined, the robot can easily select the appropriated action which transfer the current state to the next state of the task, then reach the final state to achieve the task.
+Transferring knowledge is defined as allowing the instructor to share or disseminate the knowledge or experiment to the learner. In robotic field, Human-Robot knowledge transfer which allows non-robotic-experts have opportunities to interact with robots is one of the areas that attracts attention of mamy researchers. There are two parts in Human-Robot knowledge tranfer. The first part is human-to-robot part in which robot learn the knowledge from human through human instruction and the other part is robot-to-human part where robot teach the task to human \cite{c1}. To transfer knowledge from instructor to learner, Learning from Demonstration (LfD) is one of the approaches that enables instructor can able to share the knowledge to leaner by demosntration a senquence of examples\cite{c2}.
+
+Using LfD to trasfer knowledge from human to robot, the task in our work can be defined as follows. The world consists of states which can be represented by a subset of features and actions that can be used to transfer the current states to the next state of the task. From the sequences of demonstration, robot have to observer the current states and select the actions based on its observation to transfer the current state to the next state, then  reach the final state and achieve the task. Based on this definition, if the states can be well defined by the number of features, the robot can easily select the appropriated actions using path planing system. However, the features which exit in the scene can be dozens or hundreds of
+
+In our work, the task is defined as the sequences of states and the actions that transfer the current state to the next state of the task. Our assumption is that if the states can be well defined, the robot can easily select the appropriated action which transfer the current state to the next state of the task, then reach the final state to achieve the task.
 
 \section{PROCEDURE FOR PAPER SUBMISSION}
 
@@ -214,12 +218,15 @@ References are important to the reader; therefore, each citation must be complet
 \begin{thebibliography}{99}
 
 \bibitem{c1}
-Kenta Yamada, Jun Miura. "Ambiguity-Driven Interaction in Robot-to-Human Teaching"
-\textit{Proceedings of the Fourth International Conference on Human Agent Interaction. }
+Kenta Yamada, Jun Miura. "Ambiguity-Driven Interaction in Robot-to-Human Teaching" \textit{Proceedings of the Fourth International Conference on Human Agent Interaction. }
 ACM, 2016.
 
 
-\bibitem{c2} W.-K. Chen, Linear Networks and Systems (Book style).	Belmont, CA: Wadsworth, 1993, pp. 123�135.
+\bibitem{c2}
+B.D. Argall,et al., "A survey of robot learning from demonstration", \textit{Robotics and Autonomous Systems (2009)}, doi:10.1016/j.robot.2008.10.024
+
+
+
 \bibitem{c3} H. Poor, An Introduction to Signal Detection and Estimation.   New York: Springer-Verlag, 1985, ch. 4.
 \bibitem{c4} B. Smith, �An approach to graphs of linear forms (Unpublished work style),� unpublished.
 \bibitem{c5} E. H. Miller, �A note on reflector arrays (Periodical style�Accepted for publication),� IEEE Trans. Antennas Propagat., to be publised.
